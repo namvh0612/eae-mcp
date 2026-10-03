@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.eae-mcp/
+dist/
+build/
+*.egg-info/
+eae-mcp.toml

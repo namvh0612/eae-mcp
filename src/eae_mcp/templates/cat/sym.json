@@ -1,0 +1,9 @@
+﻿{
+	"objects": [],
+	"_design_": {
+		"width": 600,
+		"height": 400,
+		"background": "CanvasBackColor",
+		"overlay": "Transparent"
+	}
+}

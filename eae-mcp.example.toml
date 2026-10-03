@@ -1,0 +1,17 @@
+# Copy to eae-mcp.toml and adjust. Every key is optional.
+[project]
+roots = ["C:/EAE"]           # folders with EAE solutions the server may open
+allow_write = false          # true lets write tools change files (they still dry-run unless asked)
+
+[eae]
+library_store = "C:/ProgramData/Schneider Electric/Libraries"
+# catalog_file = "C:/EAE/.eae-mcp/catalog.json"   # use on machines without EAE
+
+[server]
+transport = "stdio"          # "http" for remote clients (requires EAE_MCP_TOKEN unless bound to 127.0.0.1)
+http_bind = "127.0.0.1:8765"
+
+[http_probe]
+# Lets eae_http_probe send GET/HEAD requests to REST APIs you are building an EAE client for.
+enabled = false
+allowed_hosts = []           # e.g. ["api.example.com"]
