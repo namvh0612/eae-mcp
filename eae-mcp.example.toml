@@ -1,7 +1,7 @@
 # Copy to eae-mcp.toml and adjust. Every key is optional.
 [project]
 roots = ["C:/EAE"]           # folders with EAE solutions the server may open
-allow_write = false          # true lets write tools change files (they still dry-run unless asked)
+allow_write = false          # true enables the tools that change solutions (they default to dry_run)
 
 [eae]
 library_store = "C:/ProgramData/Schneider Electric/Libraries"
